@@ -1,0 +1,18 @@
+.mdc-tab-bar{
+	width: 100vw!important;
+	position: fixed!important;
+	bottom: 0!important;
+	z-index: 1!important;
+}
+.mdc-tab-bar__indicator{
+	width: 100%!important;
+}
+.mdc-tab{
+	height: 48px;
+	width: 33vw!important;
+}
+@media only screen and (orientation:landscape) {
+    .mdc-tab-bar{
+    	display: none!important;
+    }
+}
