@@ -1,0 +1,20 @@
+.mdc-toolbar{
+	width: 93.75vw!important;
+	position: fixed!important;
+	z-index: 1!important;
+	top:0!important;
+	right: 0!important;
+	background: #fff!important;
+	color: rgba(0,0,0,.87)!important;
+	border-bottom: 1px solid #e4e4e4;
+}
+.mdc-toolbar__row{
+	height: 10vh!important;
+	justify-content: center;
+	align-items: center;
+}
+@media only screen and (orientation:portrait) {
+    .mdc-toolbar{
+    	width: 100vw!important;
+    }
+}
