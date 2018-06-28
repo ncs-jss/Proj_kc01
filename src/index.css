@@ -6,3 +6,6 @@ html,body,#root {
   background: #fbfbff;
   width: 100vw;
 }
+.grid-item {
+	width: 200px;
+}
