@@ -18,6 +18,9 @@
 .mdc-list{
 	padding: 0!important;
 }
+.active>.mdc-list-item{
+	border-right:2px solid blue;
+}
 .mdc-list-item{
 	height: 10vh!important;
 	justify-content: center!important;

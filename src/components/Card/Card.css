@@ -1,28 +1,39 @@
 .mdc-card{
- 	margin-bottom: 12px; 
+ 	margin-bottom: 32px; 
  	width: 320px;
+ 	box-shadow: 0 5px rgba(0,0,0,16);
+}
+.icon{
+	display: inline-block;
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background: #000;
 }
 .mdc-card__actions{
-	position: relative;
-	bottom: 9px;
-	left: 64px;
 	padding: 0!important;
+	margin-top: -2.75rem;
 }
 .mdc-typography--headline6{
-	display: flex;
-	margin-bottom: 0;
+	display: inline-block;
+	width: 80%;
+	float: right;
+	height: 52px;
+	margin: 0;
+	line-height: 35px!important;
 }
 .mdc-typography--subtitle2{
-	margin-top: -1.5rem!important;
+	margin-top: -1rem!important;
 }
-
+.mdc-list-divider{
+	margin: 0.5rem 0!important;
+}
 #container {
 	position: absolute;
 	right: 0;
 	width: 97vw!important;
  	margin: 0 auto;
 }
- 
 #myContent {
  -moz-column-count: 3;
  -moz-column-gap: 48px;
@@ -42,7 +53,6 @@ only screen and (max-device-width : 1199px){
  column-gap: 48px;
  width: 1000px;
  }
- 
  #container {
  position: absolute;
 	right: 0;
@@ -50,8 +60,6 @@ only screen and (max-device-width : 1199px){
  	margin: 0 auto;
  }
 }
- 
- 
 @media only screen and (max-width : 999px),
 only screen and (max-device-width : 999px){
  #myContent {
@@ -62,15 +70,11 @@ only screen and (max-device-width : 999px){
  column-count: 2;
  column-gap: 0px;
  }
- 
  #container {
-position: absolute;
-	right: 0;
-	width: 97vw!important;
+	width: 100vw!important;
  	margin: 0 auto;
  }
 }
- 
 @media only screen and (max-width : 799px),
 only screen and (max-device-width : 799px){
  #myContent {
@@ -82,12 +86,10 @@ only screen and (max-device-width : 799px){
  column-gap: 0px;
  width: 600px;
  }
- 
  #container {
  width: 600px;
  }
 }
- 
 @media only screen and (max-width : 599px),
 only screen and (max-device-width : 599px){
  #myContent {
@@ -97,13 +99,15 @@ only screen and (max-device-width : 599px){
  -webkit-column-gap: 0px;
  column-count: 1;
  column-gap: 0px;
- width: 400px;
+ width: 100vw;
  }
- 
  #container {
  width: 400px;
  }
- .mdc-card{
- 	width: 200px!important;
- }
+}
+@media only screen and (max-width : 359px),
+only screen and (max-device-width : 359px){
+	.mdc-card{
+		transform: scale(0.9);
+	}
 }
