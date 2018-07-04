@@ -8,6 +8,7 @@
 }
 .mdc-drawer__header{
 	height: 10vh;
+	color: #B8C2CC;
 	border-bottom: 1px solid #e4e4e4;
 }
 .mdc-drawer__header-content{
@@ -22,6 +23,11 @@
 	height: 10vh!important;
 	justify-content: center!important;
 	align-items: center!important;
+	border-right: 0px solid #3047FF;
+	transition: all 0.1s;
+}
+.active>.mdc-list-item{
+	border-right:4px solid #3047FF;
 }
 .mdc-list-item:hover{
 	color: #3047FF!important;
@@ -30,9 +36,11 @@
 .mdc-list-item__text{
 	height: 24px;
 	width: 24px;
+	color:#B8C2CC;
+	transition: all 0.1s;
 }
-.material-icon{
-	color:#B8C2CC!important;
+.active .mdc-list-item__text{
+	color:#3047FF;
 }
 @media only screen and (orientation:portrait) {
     .mdc-drawer{

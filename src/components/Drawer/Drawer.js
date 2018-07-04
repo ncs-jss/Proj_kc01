@@ -2,18 +2,15 @@ import React from 'react';
 import {Drawer,DrawerContent,DrawerHeader} from 'rmwc/Drawer';
 import {ListItem,ListItemText} from 'rmwc/List';
 import { Icon } from 'rmwc/Icon';
-import {NavLink} from 'react-router-dom';
-
-
+import NavLink from '../NavLink/NavLink';
 import './Drawer.css';
-
 const Component = (props) => {
   return  <Drawer permanent>
             <DrawerHeader><Icon strategy="ligature">notes</Icon></DrawerHeader>
             <DrawerContent>
               <NavLink to="/">
                 <ListItem>
-                  <ListItemText><Icon strategy="ligature" use="explore_outline"/></ListItemText>
+                  <ListItemText><Icon strategy="ligature" use="explore"></Icon></ListItemText>
                 </ListItem>
               </NavLink>
               <NavLink to="/nearby">
@@ -31,5 +28,4 @@ const Component = (props) => {
             </DrawerContent> 
           </Drawer>
 }
-
 export default Component;

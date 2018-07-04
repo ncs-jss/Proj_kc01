@@ -1,7 +1,6 @@
 import React from 'react';
 import {Toolbar,ToolbarRow,ToolbarTitle} from 'rmwc/Toolbar';
 import './ToolBar.css';
-
 const Component = (props) => {
   return<React.Fragment> 
         <Toolbar>
@@ -11,5 +10,4 @@ const Component = (props) => {
         </Toolbar>
         </React.Fragment>
       }
-
 export default Component;

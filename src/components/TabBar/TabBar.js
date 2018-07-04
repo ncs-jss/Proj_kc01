@@ -2,9 +2,7 @@ import React from 'react';
 import { TabBar, Tab} from 'rmwc/Tabs';
 import { Icon } from 'rmwc/Icon';
 import {NavLink} from 'react-router-dom';
-
 import './TabBar.css';
-
 const Component = (props) => {
 	return 	<React.Fragment> 
 		        <TabBar>
@@ -14,5 +12,4 @@ const Component = (props) => {
 				</TabBar>
 	        </React.Fragment>
       }
-
 export default Component;

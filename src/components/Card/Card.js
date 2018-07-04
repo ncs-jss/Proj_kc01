@@ -1,39 +1,38 @@
 import React from 'react';
-import { Card, CardMedia, CardAction, CardActions, CardActionIcons} from 'rmwc/Card';
-import { Typography } from 'rmwc/Typography';
-
+import { Icon } from 'rmwc/Icon';
+import { Ripple } from 'rmwc/Ripple';
 import './Card.css';
-
 const Component = props => {
-  return <Card style={{width:'320px'}}>
-            <CardMedia
-              sixteenByNine
-              style={{
-                backgroundImage:
-                  'url(https://material-components-web.appspot.com/images/16-9.jpg)'
-              }}
-            />
-            <div style={{ padding: '0 1rem 1rem 1rem' }}>
-              <Typography use="headline6" tag="h2">
-                {props.title}<CardActions>
-            <CardActionIcons>
-              <CardAction icon use="keyboard_arrow_right" />
-            </CardActionIcons>
-          </CardActions>
-              </Typography>
-              
-              <Typography
-                use="subtitle2"
-                tag="h3"
-                theme="text-secondary-on-background"
-                style={{ marginTop: '-1rem' }}
-              >
-                by Kurt Wagner
-              </Typography>
-              <Typography use="body1" tag="div" theme="text-secondary-on-background">
-                {props.description}
-              </Typography>
-            </div>
-        </Card>
-}
+  if (props.dist) { return (<div className="card">
+                            <div className="card-header">
+                              <div className="card-header__column1"><div className="icon"></div>
+                              </div>
+                              <div className="card-header__row2">
+                                <h2 className="card-head">{props.name}</h2>
+                                <h4 className="card-sub">{props.dist} &#183; {props.type}</h4>
+                              </div>
+                              <div className="card-header__column3">
+                                <a href={props.link}><Ripple unbounded><Icon strategy="ligature" use="arrow_forward_ios"/></Ripple></a>
+                              </div>
+                            </div>
+                            <div className="card-divider"></div>
+                            <h4 className="card-desc">{props.desc}</h4>
+                            </div>)
+                  }
+                  return (<div className="card">
+                            <div className="card-header">
+                              <div className="card-header__column1"><div className="icon"></div>
+                              </div>
+                              <div className="card-header__column2">
+                                <h2 className="card-head">{props.name}</h2>
+                                <h4 className="card-sub">{props.type}</h4>
+                              </div>
+                              <div className="card-header__column3">
+                                <a href={props.link}><Ripple unbounded><Icon strategy="ligature" use="arrow_forward_ios"/></Ripple></a>
+                              </div>
+                            </div>
+                            <div className="card-divider"></div>
+                            <h4 className="card-desc">{props.desc}</h4>
+                          </div>);
+                  }
 export default Component;

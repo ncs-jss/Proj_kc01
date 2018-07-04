@@ -1,3 +1,8 @@
+@font-face{
+  font-family: 'GT-Walsheim-Medium';
+  src:url(../../assets/fonts/GT-Walsheim-Medium.eot);
+  src:url(../../assets/fonts/GT-Walsheim-Medium.ttf),url(../../assets/fonts/GT-Walsheim-Medium.woff);
+}
 .mdc-toolbar{
 	width: 93.75vw!important;
 	position: fixed!important;
@@ -12,6 +17,9 @@
 	height: 10vh!important;
 	justify-content: center;
 	align-items: center;
+}
+.mdc-toolbar__title{
+	font-family: 'GT-Walsheim-Medium', Roboto, sans-serif!important;
 }
 @media only screen and (orientation:portrait) {
     .mdc-toolbar{
