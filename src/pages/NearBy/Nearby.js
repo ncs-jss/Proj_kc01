@@ -6,7 +6,7 @@ import Card from '../../components/Card/Card';
 		dist:'100m',
 		type:'Multipurpose Building',
 		desc:'See a movie at the drive-in. Eat a whole lobster with your hands. Buy a Creamsicle from the neighborhood ice cream truck.',
-		link:'#'
+		link:'//goo.gl/maps/yeo8mzvDkgG2'
 	},
 	{
 		name:'Balram Tea Stall',
@@ -20,13 +20,13 @@ import Card from '../../components/Card/Card';
 		dist:'1000m',
 		type:'Hospital',
 		desc:'Read a trashy novel. Smell freshly-cut grass. Dum dum,eat some gum-gum.',
-		link:'#'
+		link:'//goo.gl/maps/XGy6xYxBzA12'
 	},
 	{	name:'Stellar IT Park',
 		dist:'100m',
 		type:'Multipurpose Building',
 		desc:'See a movie at the drive-in. Eat a whole lobster with your hands. Buy a Creamsicle from the neighborhood ice cream truck.',
-		link:'#'
+		link:'//goo.gl/maps/yeo8mzvDkgG2'
 	},
 	{
 		name:'Balram Tea Stall',
@@ -40,7 +40,27 @@ import Card from '../../components/Card/Card';
 		dist:'1000m',
 		type:'Hospital',
 		desc:'Read a trashy novel. Smell freshly-cut grass. Dum dum,eat some gum-gum.',
-		link:'google.com'
+		link:'//goo.gl/maps/XGy6xYxBzA12'
+	},
+	{
+		name:'Balram Tea Stall',
+		dist:'30m',
+		type:'Tea Stall',
+		desc:'Catch fireflies at night. Eat corn on the cob. Eat a soft-serve vanilla ice cream cone with rainbow sprinkles. Watch the sun set from a beach. Get caught in a summer rainstorm',
+		link:'#'
+	},
+	{
+		name:'Fortis Hospital',
+		dist:'1000m',
+		type:'Hospital',
+		desc:'Read a trashy novel. Smell freshly-cut grass. Dum dum,eat some gum-gum.',
+		link:'//goo.gl/maps/XGy6xYxBzA12'
+	},
+	{	name:'Stellar IT Park',
+		dist:'100m',
+		type:'Multipurpose Building',
+		desc:'See a movie at the drive-in. Eat a whole lobster with your hands. Buy a Creamsicle from the neighborhood ice cream truck.',
+		link:'//goo.gl/maps/yeo8mzvDkgG2'
 	}
 	];
 const Component = props =>{

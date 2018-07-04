@@ -3,8 +3,9 @@ html,body,#root {
   padding: 0;
   font-family: sans-serif;
   display: flex;
-  background: #fbfbff;
+  background: #F5F5F5;
   width: 100vw;
+  overflow-x: hidden;
 }
 .grid-item {
 	width: 200px;

@@ -10,7 +10,7 @@ const Component = (props) => {
             <DrawerContent>
               <NavLink to="/">
                 <ListItem>
-                  <ListItemText><Icon strategy="ligature" use="explore_outline"/></ListItemText>
+                  <ListItemText><Icon strategy="ligature" use="explore"></Icon></ListItemText>
                 </ListItem>
               </NavLink>
               <NavLink to="/nearby">
