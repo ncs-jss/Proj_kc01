@@ -1,14 +1,14 @@
 import React from 'react';
-import { TabBar, Tab} from 'rmwc/Tabs';
+import { TabBar, Tab,TabIcon , TabIconText} from 'rmwc/Tabs';
 import { Icon } from 'rmwc/Icon';
 import {NavLink} from 'react-router-dom';
 import './TabBar.css';
 const Component = (props) => {
 	return 	<React.Fragment> 
 		        <TabBar>
-				  <NavLink to="/"><Tab><Icon strategy="ligature">explore</Icon></Tab></NavLink>
-				  <NavLink to="/nearby"><Tab><Icon strategy="ligature">near_me</Icon></Tab></NavLink>
-				  <NavLink to="/societies"><Tab><Icon strategy="ligature">people</Icon></Tab></NavLink>
+				  <NavLink to="/"><Tab><TabIcon>explore</TabIcon><TabIconText>Explore</TabIconText></Tab></NavLink>
+				  <NavLink to="/nearby"><Tab><TabIcon>near_me</TabIcon><TabIconText>NearBy</TabIconText></Tab></NavLink>
+				  <NavLink to="/societies"><Tab><TabIcon>people</TabIcon><TabIconText>Societies</TabIconText></Tab></NavLink>
 				</TabBar>
 	        </React.Fragment>
       }
