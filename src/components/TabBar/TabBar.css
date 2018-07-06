@@ -5,12 +5,22 @@
 	z-index: 1!important;
 	background: #fff;
 }
-.mdc-tab-bar__indicator{
-	width: 100%!important;
-}
 .mdc-tab{
 	height: 48px;
 	width: 33vw!important;
+}
+.mdc-tab-bar__indicator{
+	width: 100%!important;
+	background-color: #3047FF!important;
+}
+.mdc-tab__icon-text{
+	font-size: 0.575rem;
+	line-height: 0.5;
+	font-family: 'GT-Walsheim-Medium', Roboto, sans-serif!important;
+}
+.mdc-tab--active .mdc-tab__icon-text,
+.mdc-tab--active .material-icons{
+	color: #3047FF!important;
 }
 @media only screen and (orientation:landscape) {
     .mdc-tab-bar{
