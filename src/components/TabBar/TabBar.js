@@ -1,6 +1,5 @@
 import React from 'react';
 import { TabBar, Tab,TabIcon , TabIconText} from 'rmwc/Tabs';
-import { Icon } from 'rmwc/Icon';
 import {NavLink} from 'react-router-dom';
 import './TabBar.css';
 const Component = (props) => {
