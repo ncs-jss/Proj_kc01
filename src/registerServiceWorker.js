@@ -7,24 +7,7 @@ const isLocalhost = Boolean(
 );
 function registerValidSW(swUrl) {
   navigator.serviceWorker
-    .register(swUrl)
-    .then((registration) => {
-      registration.onupdatefound = () => {
-        const installingWorker = registration.installing;
-        installingWorker.onstatechange = () => {
-          if (installingWorker.state === 'installed') {
-            if (navigator.serviceWorker.controller) {
-              console.log('New content is available; please refresh.');
-            } else {
-              console.log('Content is cached for offline use.');
-            }
-          }
-        };
-      };
-    })
-    .catch((error) => {
-      console.error('Error during service worker registration:', error);
-    });
+    .register(swUrl);
 }
 function checkValidServiceWorker(swUrl) {
   fetch(swUrl)
@@ -41,11 +24,6 @@ function checkValidServiceWorker(swUrl) {
       } else {
         registerValidSW(swUrl);
       }
-    })
-    .catch(() => {
-      console.log(
-        'No internet connection found. App is running in offline mode.',
-      );
     });
 }
 export function unregister() {
@@ -65,12 +43,6 @@ export default function register() {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
       if (isLocalhost) {
         checkValidServiceWorker(swUrl);
-        navigator.serviceWorker.ready.then(() => {
-          console.log(
-            'This web app is being served cache-first by a service '
-              + 'worker. To learn more, visit https://goo.gl/SC7cgQ',
-          );
-        });
       } else {
         registerValidSW(swUrl);
       }

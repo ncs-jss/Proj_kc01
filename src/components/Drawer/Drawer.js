@@ -8,9 +8,7 @@ import './Drawer.css';
 const Component = () => (
   <Drawer permanent>
     <DrawerHeader>
-      <Icon strategy="ligature">
-notes
-      </Icon>
+      <Icon strategy="ligature" use="notes" />
     </DrawerHeader>
     <DrawerContent>
       <NavLink to="/">
