@@ -1,12 +1,10 @@
-import React from 'react';
-import { Icon } from 'rmwc/Icon';
-import { Ripple } from 'rmwc/Ripple';
-import './Card.css';
+import React from "react";
+import { Icon } from "rmwc/Icon";
+import { Ripple } from "rmwc/Ripple";
+import "./Card.css";
 
-const Component = (props) => {
-  const {
-    name, dist, type, desc, link,
-  } = props;
+const Component = props => {
+  const { name, dist, type, desc, link } = props;
   if (dist) {
     return (
       <div className="card">
@@ -15,14 +13,10 @@ const Component = (props) => {
             <div className="icon" />
           </div>
           <div className="card-header__row2">
-            <h2 className="card-head">
-              {name}
-            </h2>
+            <h2 className="card-head">{name}</h2>
             <h4 className="card-sub">
               {dist}
-              {' '}
-&#183;
-              {' '}
+              &#183;
               {type}
             </h4>
           </div>
@@ -35,9 +29,7 @@ const Component = (props) => {
           </div>
         </div>
         <div className="card-divider" />
-        <h4 className="card-desc">
-          {desc}
-        </h4>
+        <h4 className="card-desc">{desc}</h4>
       </div>
     );
   }
@@ -48,12 +40,8 @@ const Component = (props) => {
           <div className="icon" />
         </div>
         <div className="card-header__column2">
-          <h2 className="card-head">
-            {name}
-          </h2>
-          <h4 className="card-sub">
-            {type}
-          </h4>
+          <h2 className="card-head">{name}</h2>
+          <h4 className="card-sub">{type}</h4>
         </div>
         <div className="card-header__column3">
           <a href={link}>
@@ -64,9 +52,7 @@ const Component = (props) => {
         </div>
       </div>
       <div className="card-divider" />
-      <h4 className="card-desc">
-        {desc}
-      </h4>
+      <h4 className="card-desc">{desc}</h4>
     </div>
   );
 };

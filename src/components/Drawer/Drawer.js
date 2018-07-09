@@ -1,9 +1,9 @@
-import React from 'react';
-import { Drawer, DrawerContent, DrawerHeader } from 'rmwc/Drawer';
-import { ListItem, ListItemText } from 'rmwc/List';
-import { Icon } from 'rmwc/Icon';
-import NavLink from '../NavLink/NavLink';
-import './Drawer.css';
+import React from "react";
+import { Drawer, DrawerContent, DrawerHeader } from "rmwc/Drawer";
+import { ListItem, ListItemText } from "rmwc/List";
+import { Icon } from "rmwc/Icon";
+import NavLink from "../NavLink/NavLink";
+import "./Drawer.css";
 
 const Component = () => (
   <Drawer permanent>
