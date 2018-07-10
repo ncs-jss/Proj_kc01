@@ -5,7 +5,7 @@ import { Icon } from "rmwc/Icon";
 import NavLink from "../NavLink/NavLink";
 import "./Drawer.css";
 
-const Component = () => (
+const DrawerComponent = () => (
   <Drawer permanent>
     <DrawerHeader>
       <Icon strategy="ligature" use="notes" />
@@ -35,4 +35,4 @@ const Component = () => (
     </DrawerContent>
   </Drawer>
 );
-export default Component;
+export default DrawerComponent;

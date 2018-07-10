@@ -1,11 +1,11 @@
 import React from "react";
 import "./Error.css";
 
-const Component = () => (
+const Error = () => (
   <div className="error">
     <div className="error-content">
       <h1>This is Error</h1>
     </div>
   </div>
 );
-export default Component;
+export default Error;

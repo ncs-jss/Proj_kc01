@@ -2,13 +2,11 @@ import React from "react";
 import { Toolbar, ToolbarRow, ToolbarTitle } from "rmwc/Toolbar";
 import "./ToolBar.css";
 
-const Component = () => (
-  <React.Fragment>
-    <Toolbar>
-      <ToolbarRow>
-        <ToolbarTitle>Know Your College</ToolbarTitle>
-      </ToolbarRow>
-    </Toolbar>
-  </React.Fragment>
+const ToolBar = () => (
+  <Toolbar>
+    <ToolbarRow>
+      <ToolbarTitle>Know Your College</ToolbarTitle>
+    </ToolbarRow>
+  </Toolbar>
 );
-export default Component;
+export default ToolBar;
