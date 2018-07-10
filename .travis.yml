@@ -5,6 +5,7 @@ cache:
   directories:
   - node_modules
 script:
+  - yarn run lint --fix
   - yarn test
   - yarn build
 deploy:
@@ -14,4 +15,3 @@ deploy:
   local_dir: build
   on:
     branch: master
-    
