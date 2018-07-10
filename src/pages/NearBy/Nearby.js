@@ -20,7 +20,7 @@ const data = [
     link: "#"
   }
 ];
-const Component = () => (
+const Nearby = () => (
   <div className="nearby" id="container">
     <div className="nearby-content" id="myContent">
       {data.map(p => (
@@ -35,4 +35,4 @@ const Component = () => (
     </div>
   </div>
 );
-export default Component;
+export default Nearby;

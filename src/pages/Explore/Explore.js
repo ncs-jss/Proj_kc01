@@ -1,11 +1,11 @@
 import React from "react";
 import "./Explore.css";
 
-const Component = () => (
+const Explore = () => (
   <div className="explore">
     <div className="explore-content">
       <h1>This is Explore</h1>
     </div>
   </div>
 );
-export default Component;
+export default Explore;

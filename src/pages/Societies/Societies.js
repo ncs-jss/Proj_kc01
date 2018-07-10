@@ -107,7 +107,7 @@ const data = [
     link: "//goo.gl/maps/XGy6xYxBzA12"
   }
 ];
-const Component = () => (
+const Societies = () => (
   <div className="nearby" id="container">
     <div className="nearby-content" id="myContent">
       {data.map(p => (
@@ -122,4 +122,4 @@ const Component = () => (
     </div>
   </div>
 );
-export default Component;
+export default Societies;
