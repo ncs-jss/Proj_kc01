@@ -22,7 +22,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css,md}": ["eslint --fix src", "git add"]
+    "src/**/*.{js,jsx,json,css,md}": [
+      "eslint --fix src",
+      "git add"
+    ]
   },
   "homepage": " https://github.com/ncs-jss/Proj_kc01",
   "devDependencies": {

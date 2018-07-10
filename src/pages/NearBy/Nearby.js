@@ -4,6 +4,7 @@ import Card from "../../components/Card/Card";
 
 const data = [
   {
+    id: 1,
     name: "Stellar IT Park",
     dist: "100m",
     type: "Multipurpose Building",
@@ -12,6 +13,7 @@ const data = [
     link: "//goo.gl/maps/yeo8mzvDkgG2"
   },
   {
+    id: 2,
     name: "Balram Tea Stall",
     dist: "30m",
     type: "Tea Stall",
@@ -30,6 +32,7 @@ const Nearby = () => (
           type={p.type}
           desc={p.desc}
           link={p.link}
+          key={p.id}
         />
       ))}
     </div>
