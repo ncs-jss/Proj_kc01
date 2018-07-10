@@ -3,9 +3,9 @@ import { Drawer, DrawerContent, DrawerHeader } from "rmwc/Drawer";
 import { ListItem, ListItemText } from "rmwc/List";
 import { Icon } from "rmwc/Icon";
 import NavLink from "../NavLink/NavLink";
-import "./Drawer.css";
+import "./SideDrawer.css";
 
-const DrawerComponent = () => (
+const SideDrawer = () => (
   <Drawer permanent>
     <DrawerHeader>
       <Icon strategy="ligature" use="notes" />
@@ -35,4 +35,4 @@ const DrawerComponent = () => (
     </DrawerContent>
   </Drawer>
 );
-export default DrawerComponent;
+export default SideDrawer;

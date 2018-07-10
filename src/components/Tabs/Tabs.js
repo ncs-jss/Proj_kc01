@@ -1,9 +1,9 @@
 import React from "react";
 import { TabBar, Tab, TabIcon, TabIconText } from "rmwc/Tabs";
 import { NavLink } from "react-router-dom";
-import "./TabBar.css";
+import "./Tabs.css";
 
-const TabBarComponent = () => (
+const Tabs = () => (
   <TabBar>
     <NavLink to="/">
       <Tab>
@@ -25,4 +25,4 @@ const TabBarComponent = () => (
     </NavLink>
   </TabBar>
 );
-export default TabBarComponent;
+export default Tabs;
