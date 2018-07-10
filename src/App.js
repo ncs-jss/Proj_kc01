@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Drawer from "./components/Drawer/Drawer";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
 import ToolBar from "./components/ToolBar/ToolBar";
-import TabBar from "./components/TabBar/TabBar";
+import Tabs from "./components/Tabs/Tabs";
 import Explore from "./pages/Explore/Explore";
 import NearBy from "./pages/NearBy/Nearby";
 import Societies from "./pages/Societies/Societies";
@@ -13,8 +13,8 @@ const App = () => (
   <BrowserRouter>
     <React.Fragment>
       <ToolBar />
-      <TabBar />
-      <Drawer />
+      <Tabs />
+      <SideDrawer />
       <Switch>
         <Route path="/" component={Explore} exact />
         <Route path="/nearby" component={NearBy} />
