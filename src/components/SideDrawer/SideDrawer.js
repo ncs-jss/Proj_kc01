@@ -11,21 +11,21 @@ const SideDrawer = () => (
       <Icon strategy="ligature" use="notes" />
     </DrawerHeader>
     <DrawerContent>
-      <NavLink to="/" className="" activeClassName="active" exact>
+      <NavLink to="/" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="explore" />
           </ListItemText>
         </ListItem>
       </NavLink>
-      <NavLink to="/nearby" className="" activeClassName="active" exact>
+      <NavLink to="/nearby" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="near_me_outline" />
           </ListItemText>
         </ListItem>
       </NavLink>
-      <NavLink to="/societies" className="" activeClassName="active" exact>
+      <NavLink to="/societies" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="people" />
