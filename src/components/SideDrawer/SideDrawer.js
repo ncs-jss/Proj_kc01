@@ -2,7 +2,7 @@ import React from "react";
 import { Drawer, DrawerContent, DrawerHeader } from "rmwc/Drawer";
 import { ListItem, ListItemText } from "rmwc/List";
 import { Icon } from "rmwc/Icon";
-import NavLink from "../NavLink/NavLink";
+import { NavLink } from "react-router-dom";
 import "./SideDrawer.css";
 
 const SideDrawer = () => (
@@ -11,21 +11,21 @@ const SideDrawer = () => (
       <Icon strategy="ligature" use="notes" />
     </DrawerHeader>
     <DrawerContent>
-      <NavLink to="/">
+      <NavLink to="/" className="" activeClassName="active" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="explore" />
           </ListItemText>
         </ListItem>
       </NavLink>
-      <NavLink to="/nearby">
+      <NavLink to="/nearby" className="" activeClassName="active" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="near_me_outline" />
           </ListItemText>
         </ListItem>
       </NavLink>
-      <NavLink to="/societies">
+      <NavLink to="/societies" className="" activeClassName="active" exact>
         <ListItem>
           <ListItemText>
             <Icon strategy="ligature" use="people" />
