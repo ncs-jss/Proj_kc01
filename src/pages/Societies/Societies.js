@@ -4,6 +4,7 @@ import Card from "../../components/Card/Card";
 
 const data = [
   {
+    id: 1,
     name: "Nibble Computer Society",
     dist: "Technical",
     type: "Department of Computer Science",
@@ -12,6 +13,7 @@ const data = [
     link: "//goo.gl/maps/yeo8mzvDkgG2"
   },
   {
+    id: 2,
     name: "Impetus Cultural Society",
     dist: "Cultural",
     type: "Department of Chemistry",
@@ -20,6 +22,7 @@ const data = [
     link: "#"
   },
   {
+    id: 3,
     name: "Microsoft Mobile Innovation Lab",
     dist: "Technical",
     type: "Department of Information Technology",
@@ -27,6 +30,7 @@ const data = [
     link: "//goo.gl/maps/XGy6xYxBzA12"
   },
   {
+    id: 4,
     name: "Nibble Computer Society",
     dist: "Technical",
     type: "Department of Computer Science",
@@ -35,6 +39,7 @@ const data = [
     link: "//goo.gl/maps/yeo8mzvDkgG2"
   },
   {
+    id: 5,
     name: "Impetus Cultural Society",
     dist: "Cultural",
     type: "Department of Chemistry",
@@ -43,6 +48,7 @@ const data = [
     link: "#"
   },
   {
+    id: 6,
     name: "Microsoft Mobile Innovation Lab",
     dist: "Technical",
     type: "Department of Information Technology",
@@ -51,6 +57,7 @@ const data = [
     link: "//goo.gl/maps/XGy6xYxBzA12"
   },
   {
+    id: 7,
     name: "Impetus Cultural Society",
     dist: "Cultural",
     type: "Department of Chemistry",
@@ -59,6 +66,7 @@ const data = [
     link: "#"
   },
   {
+    id: 8,
     name: "Microsoft Mobile Innovation Lab",
     dist: "Technical",
     type: "Department of Information Technology",
@@ -67,6 +75,7 @@ const data = [
     link: "//goo.gl/maps/XGy6xYxBzA12"
   },
   {
+    id: 9,
     name: "Nibble Computer Society",
     dist: "Technical",
     type: "Department of Computer Science",
@@ -75,6 +84,7 @@ const data = [
     link: "//goo.gl/maps/yeo8mzvDkgG2"
   },
   {
+    id: 10,
     name: "Impetus Cultural Society",
     dist: "Cultural",
     type: "Department of Chemistry",
@@ -83,6 +93,7 @@ const data = [
     link: "#"
   },
   {
+    id: 11,
     name: "Microsoft Mobile Innovation Lab",
     dist: "Technical",
     type: "Department of Information Technology",
@@ -91,6 +102,7 @@ const data = [
     link: "//goo.gl/maps/XGy6xYxBzA12"
   },
   {
+    id: 12,
     name: "Impetus Cultural Society",
     dist: "Cultural",
     type: "Department of Chemistry",
@@ -99,6 +111,7 @@ const data = [
     link: "#"
   },
   {
+    id: 13,
     name: "Microsoft Mobile Innovation Lab",
     dist: "Technical",
     type: "Department of Information Technology",
@@ -117,6 +130,7 @@ const Societies = () => (
           type={p.type}
           desc={p.desc}
           link={p.link}
+          key={p.id}
         />
       ))}
     </div>
