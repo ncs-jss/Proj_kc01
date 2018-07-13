@@ -4,10 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
+  - client/node_modules
 script:
-  - yarn run lint --fix
-  - yarn test
-  - yarn build
+  - cd client && yarn run lint --fix && yarn test && yarn build
 deploy:
   provider: pages
   skip_cleanup: true

@@ -1,44 +1,29 @@
 {
-  "name": "proj_kc01",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "masonry-layout": "^4.2.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "rmwc": "^1.7.4"
-  },
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "set CI=true &&react-scripts test --env=jsdom",
-    "lint": "eslint src",
-    "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "test": "cd client && yarn test",
+    "start": "concurrently \"node server/server.js\" \"cd client && yarn start\""
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css,md}": [
-      "eslint --fix src",
-      "git add"
-    ]
+  "engines": {
+    "node": "8.10.0"
   },
-  "homepage": " https://github.com/ncs-jss/Proj_kc01",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.3",
+    "validator": "^10.4.0"
+  },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-eslint": "^5.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "7.9.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.13.7"
+    "concurrently": "^3.6.0"
   }
 }
