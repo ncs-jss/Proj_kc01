@@ -6,7 +6,7 @@ cache:
   - node_modules
   - client/node_modules
 script:
-  - cd client && yarn run lint --fix && yarn test && yarn build
+  - cd client && yarn install && yarn run lint --fix && yarn test && yarn build
 deploy:
   provider: pages
   skip_cleanup: true
