@@ -10,9 +10,10 @@ module.exports = {
         },
         sourceType: "module"
     },
+    parser:"babel-eslint",
     extends: ["airbnb", "plugin:prettier/recommended"],
     rules: {
-        "react/jsx-filename-extension": [true, { extensions: [".js", ".jsx"] }],
+        "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
         "react/prop-types": false,
         "no-param-reassign": [
             "error",
@@ -20,7 +21,8 @@ module.exports = {
         ],
         "react/forbid-prop-types": [true, { forbid: ["object"] }],
         "react/destructuring-assignment": [true, "never"],
-        "react/jsx-one-expression-per-line":false
+        "react/jsx-one-expression-per-line":false,
+        "no-underscore-dangle":0
     },
     globals: {
         it: false
