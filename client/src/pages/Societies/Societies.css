@@ -3,7 +3,7 @@
 	z-index: 0;
 }
 .societies-content{
-	padding:15vh 7.5vw 0 13.75vw;
+	padding:15vh 7.5vw 15px 13.75vw;
 }
 @media only screen and (orientation:portrait) {
     .societies-content{
