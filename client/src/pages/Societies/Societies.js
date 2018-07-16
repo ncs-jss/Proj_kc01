@@ -3,8 +3,8 @@ import "./Societies.css";
 import Card from "../../components/Card/Card";
 
 const Societies = props => (
-  <div className="nearby" id="container">
-    <div className="nearby-content" id="myContent">
+  <div className="societies" id="container">
+    <div className="societies-content" id="myContent">
       {props.data.map(p => (
         <Card
           name={p.name}
