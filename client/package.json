@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "set CI=true &&react-scripts test --env=jsdom",
-    "lint": "eslint src",
+    "lint": "eslint src --fix",
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
