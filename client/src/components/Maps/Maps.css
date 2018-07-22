@@ -1,0 +1,28 @@
+.mapContainer{
+	position: relative; 
+  height:0; 
+  width: 100%; 
+  padding: 0;
+  padding-bottom: 80vh; 
+}
+.mapContainer svg{
+	position: absolute; 
+  height: 80vh; 
+  width: 100%; 
+  left: 0; 
+  top:0;
+}
+.svgPanZoom div{
+	display: none!important;
+}
+.a{
+	clip-path:url(#b);
+}
+.b{
+	fill:#707070;
+	}
+	.b:hover{
+		fill:#000;
+		cursor: pointer;
+	}
+.d{fill:#fff;}
