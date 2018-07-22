@@ -13,7 +13,9 @@
     "react-leaflet": "^2.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "react-svg-pan-zoom": "^2.17.0",
     "react-tooltip": "^3.6.1",
+    "react-virtualized": "^9.20.1",
     "rmwc": "^1.7.4"
   },
   "scripts": {
@@ -26,7 +28,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
-      "eslint --fix src",
+      "eslint src --fix",
       "git add"
     ]
   },

@@ -7,6 +7,6 @@
 }
 @media only screen and (orientation:portrait) {
     .explore-content{
-    	padding:10vh 5vw;
+    	padding:10vh 0vw;
     }
 }

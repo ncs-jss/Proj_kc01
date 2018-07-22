@@ -12,6 +12,9 @@
   left: 0; 
   top:0;
 }
+.svgPanZoom div{
+	display: none!important;
+}
 .a{
 	clip-path:url(#b);
 }
