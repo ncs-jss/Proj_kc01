@@ -129,14 +129,10 @@ class Maps extends React.Component {
     };
   }
 
-  arrayToString(index) {
-    return this.mapData[index].tooltipDesc.join(" \u2022 ");
-  }
-
   openTooltip(index) {
     this.setState({
       tooltipTitle: this.mapData[index].title,
-      tooltipDesc: this.arrayToString(index)
+      tooltipDesc: this.mapData[index].tooltipDesc.join(" \u2022 ")
     });
   }
 
