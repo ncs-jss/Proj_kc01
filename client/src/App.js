@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Loader from "./components/Loader/Loader";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import ToolBar from "./components/ToolBar/ToolBar";
 import Tabs from "./components/Tabs/Tabs";
@@ -33,16 +34,7 @@ class App extends React.Component {
   render() {
     let content;
     if (this.state.loading) {
-      content = (
-        <div className="loaderContainer">
-          <div className="loader">
-            <div className="box" />
-            <div className="box" />
-            <div className="box" />
-            <div className="box" />
-          </div>
-        </div>
-      );
+      content = <Loader />;
     } else
       content = (
         <BrowserRouter>
