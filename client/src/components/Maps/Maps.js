@@ -19,95 +19,121 @@ class Maps extends React.Component {
     this.mapData = [
       {
         index: 0,
-        title: "AB-1",
+        title: "Academic Block - I",
+        tooltipDesc: ["Administrative Dept", "Dept for CSE & ECE"],
         desc: "This is AB-1"
       },
       {
         index: 1,
-        title: "AB-2",
+        title: "Academic Block - II",
+        tooltipDesc: [],
         desc: "This is AB-2"
       },
       {
         index: 2,
-        title: "AB-3",
+        title: "Academic Block - III",
+        tooltipDesc: [],
         desc: "This is AB-3"
       },
       {
         index: 3,
         title: "Multipurpose Hall",
+        tooltipDesc: [],
         desc: "This is Multipurpose Hall"
       },
       {
         index: 4,
         title: "Central Workshop",
+        tooltipDesc: [],
         desc: "This is Central Workshop"
       },
       {
         index: 5,
-        title: "AB-4",
+        title: "Academic Block - IV",
+        tooltipDesc: [],
         desc: "This is AB-4"
       },
       {
         index: 6,
         title: "Boys Hostel",
+        tooltipDesc: [],
         desc: "This is Boys Hostel"
       },
       {
         index: 7,
-        title: "AB-5",
+        title: "Academic Block - V",
+        tooltipDesc: [],
         desc: "This is AB-5"
       },
       {
         index: 8,
-        title: "ISH",
+        title: "International Student Hostel",
+        tooltipDesc: [],
         desc: "This is ISH"
       },
       {
         index: 9,
         title: "Temple",
+        tooltipDesc: [],
         desc: "This is Temple"
       },
       {
         index: 10,
         title: "Amenity Center",
+        tooltipDesc: [],
         desc: "This is Amenity Center"
       },
       {
         index: 11,
         title: "Staff Quarters",
+        tooltipDesc: [],
         desc: "These are Staff Quarters"
       },
       {
         index: 12,
         title: "Girls Hostel",
+        tooltipDesc: [],
         desc: "This is Girls Hostel"
       },
       {
         index: 13,
         title: "Staff Quaters",
+        tooltipDesc: [],
         desc: "These are Staff Quarters"
       },
       {
         index: 14,
         title: "Guest House",
+        tooltipDesc: [],
         desc: "This is Guest House"
       },
       {
         index: 15,
         title: "Power Generator Room",
+        tooltipDesc: [],
         desc: "This is Power Generator Room"
       },
       {
         index: 16,
         title: "Grid Room",
+        tooltipDesc: [],
         desc: "This is Grid Room"
       }
     ];
     this.state = {
       title: "title",
       desc: "desc",
+      tooltipTitle: null,
+      tooltipDesc: null,
       dialogOpen: false
     };
+  }
+
+  openTooltip(index) {
+    this.setState({
+      tooltipTitle: this.mapData[index].title,
+      tooltipDesc: this.mapData[index].tooltipDesc.join(" \u2022 ")
+    });
   }
 
   openDialog(index) {
@@ -394,162 +420,199 @@ class Maps extends React.Component {
               <g id="buildings" transform="translate(-64 -132)">
                 <path
                   id="ab1-2"
-                  data-tip="AB-1"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1380,2064v36h12v12h32l44,44,28-28-40-40v-12l40-40-28-28-44,44h-32v12h-12"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(0)}
+                  onMouseOver={() => this.openTooltip(0)}
+                  onFocus={() => this.openTooltip(0)}
                 />
                 <path
                   id="ab2-2"
-                  data-tip="AB-2"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1384,1900v48h40l28,28v24h44v-48l-16-16,16-16-20-20-16,16-16-16Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(1)}
+                  onMouseOver={() => this.openTooltip(1)}
+                  onFocus={() => this.openTooltip(1)}
                 />
                 <path
                   id="ab3-2"
-                  data-tip="AB-3"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1212,2052l16,16,4-4,8,8,8-8,4,4,32-32,8,8,8-8,36,36,4-4,4,4,8-8,4,4,16-16-8-8,4-4-44-44h-4v-36h-56v32l-48,48,4,4Z"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(2)}
+                  onMouseOver={() => this.openTooltip(2)}
+                  onFocus={() => this.openTooltip(2)}
                 />
                 <path
                   id="mph-2"
-                  data-tip="Multipurpose Hall"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1660,1992v-84H1536v32h-4v24h4v28Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(3)}
+                  onMouseOver={() => this.openTooltip(3)}
+                  onFocus={() => this.openTooltip(3)}
                 />
                 <path
                   id="workshop-2"
-                  data-tip="Central Workshop"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1672,1908h40v60h-40Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(4)}
+                  onMouseOver={() => this.openTooltip(4)}
+                  onFocus={() => this.openTooltip(4)}
                 />
                 <path
                   id="ab4-2"
-                  data-tip="AB-4"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1736,1904v36h-12v24h68v-24h-12v-36Z"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(5)}
+                  onMouseOver={() => this.openTooltip(5)}
+                  onFocus={() => this.openTooltip(5)}
                 />
                 <path
                   id="bh-2"
-                  data-tip="Boys Hostel"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M-684-2401.665-696-2448l-24,4v12l-12,16-44-36-12,16-16-12,12-16-44-32,16-20h8v-32h-28v-32h136l20,12,36,156-36,10.335ZM-780-2496l32,24-8,12,20,16,8-12,28-4-16-76-12-12h-72v36l-12,12,20,16,12-12Z"
                   transform="translate(1804 2760)"
                   onClick={() => this.openDialog(6)}
+                  onMouseOver={() => this.openTooltip(6)}
+                  onFocus={() => this.openTooltip(6)}
                 />
                 <path
                   id="ab5-2"
-                  data-tip="AB-5"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M-740-1612h-64v-28h-24v-12h-12v-48h12v-4h12v-12h24v16h20v16h-4v12h16v-12h-4v-12h4v-16h76v20h5.324v-24H-620v16h4v-20h20v32h16v-24h60v16h12v-8h28v48h-8v28h-36v-24h-16v8h-36v-12h-12v-4h-32v8h-44v-8h-40v12h-36v36Zm-76-72v20h20v-20Z"
                   transform="translate(2016 1884)"
                   onClick={() => this.openDialog(7)}
+                  onMouseOver={() => this.openTooltip(7)}
+                  onFocus={() => this.openTooltip(7)}
                 />
                 <path
                   id="ish-2"
-                  data-tip="ISH"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M-792-1640h-40v-16h-8v-16h8v-20h-8v-16h8v-12h40v12h8v-12h40v12h5.835v12H-744v16h4v12h-4v16h-48v12Zm-24-32v12h12v-12h20v-8h12v8h8v-12h8v-8h-12v-12h-8v12h-28v-12h-12v16h-4v16Z"
                   transform="translate(2396 1888)"
                   onClick={() => this.openDialog(8)}
+                  onMouseOver={() => this.openTooltip(8)}
+                  onFocus={() => this.openTooltip(8)}
                 />
                 <path
                   id="temple-2"
-                  data-tip="Temple"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1876,2164v32h4v4h12l.1-4h3.9v-32h-20"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(9)}
+                  onMouseOver={() => this.openTooltip(9)}
+                  onFocus={() => this.openTooltip(9)}
                 />
                 <path
                   id="amenity-2"
-                  data-tip="Amenity Center"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1156,2256h8v12h-24v-48h24v-4h8v4h16v28h-12v-8h-20Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(10)}
+                  onMouseOver={() => this.openTooltip(10)}
+                  onFocus={() => this.openTooltip(10)}
                 />
                 <path
                   id="staff2-2"
-                  data-tip="Staff Quarters"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M1124,2244v24h-48v-24h16v-12h20v12Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(11)}
+                  onMouseOver={() => this.openTooltip(11)}
+                  onFocus={() => this.openTooltip(11)}
                 />
                 <path
                   id="gh-2"
-                  data-tip="Girls Hostel"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M0-1552v-152l16-16H52v8H64v8h64v16h4v-16h20v44H132v-16h-4v16H88v-24H64v20l-16,16H40v96Z"
                   transform="translate(168 1892)"
                   onClick={() => this.openDialog(12)}
+                  onMouseOver={() => this.openTooltip(12)}
+                  onFocus={() => this.openTooltip(12)}
                 />
                 <path
                   id="staff1-2"
-                  data-tip="Staff Quarters"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M328,1908v44h20v-44Z"
                   transform="translate(0 -1720)"
                   onClick={() => this.openDialog(13)}
+                  onMouseOver={() => this.openTooltip(13)}
+                  onFocus={() => this.openTooltip(13)}
                 />
                 <path
                   id="guest-2"
-                  data-tip="Guest House"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M44-1676H4v-4H0v-36H4v-4H44v44Zm-24-28v12h8v-12H20Z"
                   transform="translate(304 1964)"
                   onClick={() => this.openDialog(14)}
+                  onMouseOver={() => this.openTooltip(14)}
+                  onFocus={() => this.openTooltip(14)}
                 />
                 <path
                   id="power-2"
-                  data-tip="Power Generators"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M104,2220v40h20v-40Z"
                   transform="translate(0 -1724)"
                   onClick={() => this.openDialog(15)}
+                  onMouseOver={() => this.openTooltip(15)}
+                  onFocus={() => this.openTooltip(15)}
                 />
                 <path
                   id="grid-2"
-                  data-tip="Grid House"
+                  data-tip
                   data-for="tooltip"
                   className="cls-7"
                   d="M112,2208h12v-20H112Z"
                   transform="translate(0 -1720)"
                   onClick={() => this.openDialog(16)}
+                  onMouseOver={() => this.openTooltip(16)}
+                  onFocus={() => this.openTooltip(16)}
                 />
               </g>
             </g>
           </svg>
         </ReactSVGPanZoom>
-        <ReactTooltip id="tooltip" />
+        <ReactTooltip id="tooltip" className="tooltip">
+          <h1>{this.state.tooltipTitle}</h1>
+          <p>{this.state.tooltipDesc}</p>
+        </ReactTooltip>
         <Dialog
           open={this.state.dialogOpen}
           onClose={() => this.setState({ dialogOpen: false })}
