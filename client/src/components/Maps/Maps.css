@@ -43,6 +43,65 @@
 .svgPanZoom div{
   display: none!important;
 }
+.mdc-dialog__surface{
+  max-width: 640px!important;
+  border-radius: 4px!important;
+  padding: 36px 48px 42px 48px;
+  }
+.mdc-dialog__header{
+  padding: 0!important;
+}
+.mdc-dialog__header__title{
+  font-size: 24px!important;
+  font-family: GT-Walsheim-Medium,sans-serif!important;
+  line-height: 34px!important;
+}
+.mdc-dialog__body{
+  margin-top: 36px!important;
+  padding: 0!important;
+}
+.dialogField{
+  display: flex;
+  align-items: center;
+  font-family: GT-Walsheim-Medium,sans-serif;
+  height: 84px;
+}
+.dialogFieldTitle{
+  height: 84px;
+}
+.dialogFieldSuper{
+  font-size: 24px;
+  position: relative;
+  bottom: 25px;
+  text-transform: uppercase;
+}
+.dialogFieldDesc{
+  padding-left: 40px;
+  color: #818D99;
+  font-size: 16px;
+  font-family: GT-Walsheim-Regular,sans-serif;
+  line-height: 23px;
+}
+.dialogFieldTitle,.dialogFieldSuper{
+  color: #1B1D1F;
+}
+.close>.material-icons{
+  padding: 10px;
+}
+.close>.material-icons:hover{
+  cursor: pointer;
+}
+.dialogField h1{
+  margin:0;
+  line-height: 84px;
+  width: 50px;
+}
+.dialogField p{
+  margin: 0;
+}
+.dialogField .dialogFieldTitle{
+  font-size: 60px;
+}
 .cls-1 {
   clip-path: url(#clip-jss-map);
 }
