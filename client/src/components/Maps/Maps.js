@@ -1,5 +1,7 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
+import { Ripple } from "rmwc/Ripple";
+import { Icon } from "rmwc/Icon";
 import { ReactSVGPanZoom } from "react-svg-pan-zoom";
 import {
   Dialog,
@@ -7,10 +9,9 @@ import {
   DialogHeader,
   DialogHeaderTitle,
   DialogBody,
-  DialogFooter,
-  DialogFooterButton,
   DialogBackdrop
 } from "rmwc/Dialog";
+import DialogField from "../DialogField/DialogField";
 import "./Maps.css";
 
 class Maps extends React.Component {
@@ -21,108 +22,472 @@ class Maps extends React.Component {
         index: 0,
         title: "Academic Block - I",
         tooltipDesc: ["Administrative Dept", "Dept for CSE & ECE"],
-        desc: "This is AB-1"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 1,
         title: "Academic Block - II",
         tooltipDesc: [],
-        desc: "This is AB-2"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]]
+        ]
       },
       {
         index: 2,
         title: "Academic Block - III",
         tooltipDesc: [],
-        desc: "This is AB-3"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 3,
         title: "Multipurpose Hall",
         tooltipDesc: [],
-        desc: "This is Multipurpose Hall"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 4,
         title: "Central Workshop",
         tooltipDesc: [],
-        desc: "This is Central Workshop"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 5,
         title: "Academic Block - IV",
         tooltipDesc: [],
-        desc: "This is AB-4"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 6,
         title: "Boys Hostel",
         tooltipDesc: [],
-        desc: "This is Boys Hostel"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 7,
         title: "Academic Block - V",
         tooltipDesc: [],
-        desc: "This is AB-5"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 8,
         title: "International Student Hostel",
         tooltipDesc: [],
-        desc: "This is ISH"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 9,
         title: "Temple",
         tooltipDesc: [],
-        desc: "This is Temple"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 10,
         title: "Amenity Center",
         tooltipDesc: [],
-        desc: "This is Amenity Center"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 11,
         title: "Staff Quarters",
         tooltipDesc: [],
-        desc: "These are Staff Quarters"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 12,
         title: "Girls Hostel",
         tooltipDesc: [],
-        desc: "This is Girls Hostel"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 13,
         title: "Staff Quaters",
         tooltipDesc: [],
-        desc: "These are Staff Quarters"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 14,
         title: "Guest House",
         tooltipDesc: [],
-        desc: "This is Guest House"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 15,
         title: "Power Generator Room",
         tooltipDesc: [],
-        desc: "This is Power Generator Room"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       },
       {
         index: 16,
         title: "Grid Room",
         tooltipDesc: [],
-        desc: "This is Grid Room"
+        desc: [
+          [
+            "G",
+            "",
+            [
+              "Registrar's Office",
+              "Principal's Office",
+              "Accountant",
+              "Seminar Hall"
+            ]
+          ],
+          ["1", "st", ["Computer Center", "CSE Classrooms", "CSE Staff Rooms"]],
+          [
+            "2",
+            "nd",
+            [
+              "Electronics Lab",
+              "ECE Classrooms",
+              "ECE Staff Rooms",
+              "CSE Classrooms"
+            ]
+          ]
+        ]
       }
     ];
     this.state = {
-      title: "title",
-      desc: "desc",
+      title: null,
+      desc: [],
       tooltipTitle: null,
       tooltipDesc: null,
       dialogOpen: false
@@ -620,11 +985,25 @@ class Maps extends React.Component {
           <DialogSurface>
             <DialogHeader>
               <DialogHeaderTitle>{this.state.title}</DialogHeaderTitle>
+              <Ripple unbounded>
+                <button
+                  type="button"
+                  onClick={() => this.setState({ dialogOpen: false })}
+                  className="close"
+                >
+                  <Icon strategy="ligature" use="close" />
+                </button>
+              </Ripple>
             </DialogHeader>
-            <DialogBody>{this.state.desc}</DialogBody>
-            <DialogFooter>
-              <DialogFooterButton cancel>Close</DialogFooterButton>
-            </DialogFooter>
+            <DialogBody>
+              {this.state.desc.map(field => (
+                <DialogField
+                  title={field[0]}
+                  superscript={field[1]}
+                  desc={field[2].join(" \u2022 ")}
+                />
+              ))}
+            </DialogBody>
           </DialogSurface>
           <DialogBackdrop />
         </Dialog>
