@@ -28,7 +28,6 @@
       "git add"
     ]
   },
-  "proxy": "http://localhost:3001",
   "homepage": " https://github.com/ncs-jss/Proj_kc01",
   "devDependencies": {
     "babel-eslint": "^8.2.6",

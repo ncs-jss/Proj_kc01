@@ -10,21 +10,27 @@ import Societies from "./pages/Societies/Societies";
 import Error from "./pages/Error/Error";
 import "./App.css";
 
+const URL = "http://protected-badlands-80239.herokuapp.com";
+
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       nearby: [],
       societies: [],
+      mapdata: [],
       loading: true
     };
   }
 
   componentDidMount() {
-    fetch("/nearby")
+    fetch(`${URL}/mapdata`)
       .then(res => res.json())
-      .then(nearby => this.setState({ nearby: nearby.nearby, loading: true }));
-    fetch("/society")
+      .then(mapdata => this.setState({ mapdata, loading: true }));
+    fetch(`${URL}/nearby`)
+      .then(res => res.json())
+      .then(nearby => this.setState({ nearby, loading: true }));
+    fetch(`${URL}/society`)
       .then(res => res.json())
       .then(society =>
         this.setState({ societies: society.society, loading: false })
@@ -43,7 +49,11 @@ class App extends React.Component {
             <Tabs />
             <SideDrawer />
             <Switch>
-              <Route path="/" component={Explore} exact />
+              <Route
+                path="/"
+                render={() => <Explore data={this.state.mapdata} />}
+                exact
+              />
               <Route
                 path="/nearby"
                 render={() => <NearBy data={this.state.nearby} />}
