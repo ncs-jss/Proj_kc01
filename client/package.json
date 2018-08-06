@@ -5,6 +5,7 @@
   "dependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "global": "^4.3.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -28,7 +29,6 @@
       "git add"
     ]
   },
-  "proxy": "http://localhost:3001",
   "homepage": " https://github.com/ncs-jss/Proj_kc01",
   "devDependencies": {
     "babel-eslint": "^8.2.6",
