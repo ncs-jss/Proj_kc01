@@ -1,2 +1,4 @@
 node_modules/
 client/build/
+server/config/config.json
+server/db/mongoose.js
