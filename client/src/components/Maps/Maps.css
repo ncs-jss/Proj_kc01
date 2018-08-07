@@ -85,6 +85,14 @@
 .dialogFieldTitle,.dialogFieldSuper{
   color: #1B1D1F;
 }
+.close{
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.close:hover{
+  cursor: pointer;
+}
 .close>.material-icons{
   padding: 10px;
 }
