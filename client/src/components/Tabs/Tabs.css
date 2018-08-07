@@ -5,6 +5,11 @@
 	z-index: 1!important;
 	background: #fff;
 }
+.mdc-tab-bar a{
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
 .mdc-tab{
 	height: 48px;
 	width: 33vw!important;
@@ -17,6 +22,9 @@
 	font-size: 0.575rem;
 	line-height: 0.5;
 	font-family: 'GT-Walsheim-Medium', Roboto, sans-serif!important;
+}
+.mdc-tab--active{
+	background-color: #fff;
 }
 .mdc-tab--active .mdc-tab__icon-text,
 .mdc-tab--active .material-icons{
