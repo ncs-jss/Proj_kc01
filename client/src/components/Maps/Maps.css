@@ -144,4 +144,8 @@
     #tooltip{
       display: none!important;
     }
+    svg{
+      top:-40px!important;
+      left: -700px!important;
+    }
 }
