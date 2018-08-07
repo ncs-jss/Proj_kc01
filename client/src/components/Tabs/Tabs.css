@@ -13,6 +13,8 @@
 .mdc-tab{
 	height: 48px;
 	width: 33vw!important;
+}.mdc-tab::after, .mdc-tab::before{
+	background: #fff!important;
 }
 .mdc-tab-bar__indicator{
 	width: 100%!important;
