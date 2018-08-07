@@ -3,6 +3,7 @@
 	flex-direction: column;
 	height: 99.5vh;
 	width: 6.25vw!important;
+	min-width: 60px;
 	z-index: 1!important;
 	position: fixed!important;
 }
