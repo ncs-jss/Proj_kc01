@@ -148,4 +148,7 @@
       top:-40px!important;
       left: -700px!important;
     }
+    .mdc-dialog__surface{
+      transform: scale(0.9)!important;
+    }
 }
