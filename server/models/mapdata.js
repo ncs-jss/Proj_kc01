@@ -1,33 +1,24 @@
 var mongoose = require('mongoose')
 
-var Nearby = mongoose.model('Nearby', {
-  name: {
-    type: String,
-    required: true,
-    minlength: 1,
-    trim: true
-  },
-  dist: {
+var MapData = mongoose.model('MapData', {
+  title: {
     type: String,
     required: true,
     trim: true
   },
-  type: {
-    type: String,
+  index: {
+    type: Number,
+    required: true,
+    trim: true
+  },
+  tooltipDesc: {
+    type: [String],
     trim: true
   },
   desc: {
-    type: String,
+    type: [mongoose.Schema.Types.Mixed],
     required: true,
     trim: true
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-  expense: {
-    type: Number,
-    required: true
   },
   _creator: {
     required: true,
@@ -36,5 +27,5 @@ var Nearby = mongoose.model('Nearby', {
 });
 
 module.exports = {
-  Nearby
+  MapData
 }
