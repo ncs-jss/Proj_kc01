@@ -324,6 +324,7 @@ class Maps extends React.Component {
                   d="M1380,2064v36h12v12h32l44,44,28-28-40-40v-12l40-40-28-28-44,44h-32v12h-12"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(0)}
+                  onTouchEnd={() => this.openDialog(0)}
                   onMouseOver={() => this.openTooltip(0)}
                   onFocus={() => this.openTooltip(0)}
                 />
@@ -335,6 +336,7 @@ class Maps extends React.Component {
                   d="M1384,1900v48h40l28,28v24h44v-48l-16-16,16-16-20-20-16,16-16-16Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(1)}
+                  onTouchEnd={() => this.openDialog(1)}
                   onMouseOver={() => this.openTooltip(1)}
                   onFocus={() => this.openTooltip(1)}
                 />
@@ -346,6 +348,7 @@ class Maps extends React.Component {
                   d="M1212,2052l16,16,4-4,8,8,8-8,4,4,32-32,8,8,8-8,36,36,4-4,4,4,8-8,4,4,16-16-8-8,4-4-44-44h-4v-36h-56v32l-48,48,4,4Z"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(2)}
+                  onTouchEnd={() => this.openDialog(2)}
                   onMouseOver={() => this.openTooltip(2)}
                   onFocus={() => this.openTooltip(2)}
                 />
@@ -357,6 +360,7 @@ class Maps extends React.Component {
                   d="M1660,1992v-84H1536v32h-4v24h4v28Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(3)}
+                  onTouchEnd={() => this.openDialog(3)}
                   onMouseOver={() => this.openTooltip(3)}
                   onFocus={() => this.openTooltip(3)}
                 />
@@ -368,6 +372,7 @@ class Maps extends React.Component {
                   d="M1672,1908h40v60h-40Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(4)}
+                  onTouchEnd={() => this.openDialog(4)}
                   onMouseOver={() => this.openTooltip(4)}
                   onFocus={() => this.openTooltip(4)}
                 />
@@ -379,6 +384,7 @@ class Maps extends React.Component {
                   d="M1736,1904v36h-12v24h68v-24h-12v-36Z"
                   transform="translate(-840 -1720)"
                   onClick={() => this.openDialog(5)}
+                  onTouchEnd={() => this.openDialog(5)}
                   onMouseOver={() => this.openTooltip(5)}
                   onFocus={() => this.openTooltip(5)}
                 />
@@ -390,6 +396,7 @@ class Maps extends React.Component {
                   d="M-684-2401.665-696-2448l-24,4v12l-12,16-44-36-12,16-16-12,12-16-44-32,16-20h8v-32h-28v-32h136l20,12,36,156-36,10.335ZM-780-2496l32,24-8,12,20,16,8-12,28-4-16-76-12-12h-72v36l-12,12,20,16,12-12Z"
                   transform="translate(1804 2760)"
                   onClick={() => this.openDialog(6)}
+                  onTouchEnd={() => this.openDialog(6)}
                   onMouseOver={() => this.openTooltip(6)}
                   onFocus={() => this.openTooltip(6)}
                 />
@@ -401,6 +408,7 @@ class Maps extends React.Component {
                   d="M-740-1612h-64v-28h-24v-12h-12v-48h12v-4h12v-12h24v16h20v16h-4v12h16v-12h-4v-12h4v-16h76v20h5.324v-24H-620v16h4v-20h20v32h16v-24h60v16h12v-8h28v48h-8v28h-36v-24h-16v8h-36v-12h-12v-4h-32v8h-44v-8h-40v12h-36v36Zm-76-72v20h20v-20Z"
                   transform="translate(2016 1884)"
                   onClick={() => this.openDialog(7)}
+                  onTouchEnd={() => this.openDialog(7)}
                   onMouseOver={() => this.openTooltip(7)}
                   onFocus={() => this.openTooltip(7)}
                 />
@@ -412,6 +420,7 @@ class Maps extends React.Component {
                   d="M-792-1640h-40v-16h-8v-16h8v-20h-8v-16h8v-12h40v12h8v-12h40v12h5.835v12H-744v16h4v12h-4v16h-48v12Zm-24-32v12h12v-12h20v-8h12v8h8v-12h8v-8h-12v-12h-8v12h-28v-12h-12v16h-4v16Z"
                   transform="translate(2396 1888)"
                   onClick={() => this.openDialog(8)}
+                  onTouchEnd={() => this.openDialog(8)}
                   onMouseOver={() => this.openTooltip(8)}
                   onFocus={() => this.openTooltip(8)}
                 />
@@ -423,6 +432,7 @@ class Maps extends React.Component {
                   d="M1876,2164v32h4v4h12l.1-4h3.9v-32h-20"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(9)}
+                  onTouchEnd={() => this.openDialog(9)}
                   onMouseOver={() => this.openTooltip(9)}
                   onFocus={() => this.openTooltip(9)}
                 />
@@ -434,6 +444,7 @@ class Maps extends React.Component {
                   d="M1156,2256h8v12h-24v-48h24v-4h8v4h16v28h-12v-8h-20Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(10)}
+                  onTouchEnd={() => this.openDialog(10)}
                   onMouseOver={() => this.openTooltip(10)}
                   onFocus={() => this.openTooltip(10)}
                 />
@@ -445,6 +456,7 @@ class Maps extends React.Component {
                   d="M1124,2244v24h-48v-24h16v-12h20v12Z"
                   transform="translate(-840 -1724)"
                   onClick={() => this.openDialog(11)}
+                  onTouchEnd={() => this.openDialog(11)}
                   onMouseOver={() => this.openTooltip(11)}
                   onFocus={() => this.openTooltip(11)}
                 />
@@ -456,6 +468,7 @@ class Maps extends React.Component {
                   d="M0-1552v-152l16-16H52v8H64v8h64v16h4v-16h20v44H132v-16h-4v16H88v-24H64v20l-16,16H40v96Z"
                   transform="translate(168 1892)"
                   onClick={() => this.openDialog(12)}
+                  onTouchEnd={() => this.openDialog(12)}
                   onMouseOver={() => this.openTooltip(12)}
                   onFocus={() => this.openTooltip(12)}
                 />
@@ -467,6 +480,7 @@ class Maps extends React.Component {
                   d="M328,1908v44h20v-44Z"
                   transform="translate(0 -1720)"
                   onClick={() => this.openDialog(13)}
+                  onTouchEnd={() => this.openDialog(13)}
                   onMouseOver={() => this.openTooltip(13)}
                   onFocus={() => this.openTooltip(13)}
                 />
@@ -478,6 +492,7 @@ class Maps extends React.Component {
                   d="M44-1676H4v-4H0v-36H4v-4H44v44Zm-24-28v12h8v-12H20Z"
                   transform="translate(304 1964)"
                   onClick={() => this.openDialog(14)}
+                  onTouchEnd={() => this.openDialog(14)}
                   onMouseOver={() => this.openTooltip(14)}
                   onFocus={() => this.openTooltip(14)}
                 />
@@ -489,6 +504,7 @@ class Maps extends React.Component {
                   d="M104,2220v40h20v-40Z"
                   transform="translate(0 -1724)"
                   onClick={() => this.openDialog(15)}
+                  onTouchEnd={() => this.openDialog(15)}
                   onMouseOver={() => this.openTooltip(15)}
                   onFocus={() => this.openTooltip(15)}
                 />
@@ -500,6 +516,7 @@ class Maps extends React.Component {
                   d="M112,2208h12v-20H112Z"
                   transform="translate(0 -1720)"
                   onClick={() => this.openDialog(16)}
+                  onTouchEnd={() => this.openDialog(16)}
                   onMouseOver={() => this.openTooltip(16)}
                   onFocus={() => this.openTooltip(16)}
                 />
