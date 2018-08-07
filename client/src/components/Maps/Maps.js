@@ -536,13 +536,14 @@ class Maps extends React.Component {
             <DialogHeader>
               <DialogHeaderTitle>{this.state.title}</DialogHeaderTitle>
               <Ripple unbounded>
-                <button
-                  type="button"
+                <span
+                  role="presentation"
                   onClick={() => this.setState({ dialogOpen: false })}
+                  onKeyPress={() => this.setState({ dialogOpen: false })}
                   className="close"
                 >
                   <Icon strategy="ligature" use="close" />
-                </button>
+                </span>
               </Ripple>
             </DialogHeader>
             <DialogBody>
