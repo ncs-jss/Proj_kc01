@@ -12,6 +12,7 @@ const Nearby = props => (
           type={p.type}
           desc={p.desc}
           link={p.link}
+          exp={p.expense}
           key={p._id}
         />
       ))}

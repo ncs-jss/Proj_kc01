@@ -4,7 +4,11 @@ import { Ripple } from "rmwc/Ripple";
 import "./Card.css";
 
 const Card = props => {
-  const { name, dist, type, desc, link } = props;
+  const { name, dist, type, desc, exp, link } = props;
+  const calcExpense = rate => {
+    let n = rate;
+    for (n; n > 0; n -= n) return "$";
+  };
   return (
     <div className="card">
       <div className="card-header">
@@ -16,6 +20,7 @@ const Card = props => {
           <h4 className="card-sub">
             {dist ? <span>{dist} &#183; </span> : null}
             {type}
+            {exp ? <span> &#183; {calcExpense(exp)} </span> : null}
           </h4>
         </div>
         <div className="card-header__column3">
