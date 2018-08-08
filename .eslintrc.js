@@ -22,7 +22,8 @@ module.exports = {
         "react/forbid-prop-types": [true, { forbid: ["object"] }],
         "react/destructuring-assignment": [true, "never"],
         "react/jsx-one-expression-per-line":false,
-        "no-underscore-dangle":0
+        "no-underscore-dangle":0,
+        "consistent-return": 0 
     },
     globals: {
         it: false
