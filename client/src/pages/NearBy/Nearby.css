@@ -10,3 +10,17 @@
     	padding:15vh 0vw;
     }
 }
+@media only screen and (max-width: 1199px){
+	#myContent{
+	column-count: 2!important;
+	column-gap: 0!important;
+	width: auto!important;
+	}
+}
+@media only screen and (max-width: 759px){
+	#myContent{
+	column-count: 1!important;
+	column-gap: 0!important;
+	width: auto!important;
+	}
+}
