@@ -9,6 +9,7 @@
 }
 .mdc-drawer__header{
 	height: 10vh;
+	min-height: 64px;
 	color: #B8C2CC;
 	border-bottom: 1px solid #e4e4e4;
 }
