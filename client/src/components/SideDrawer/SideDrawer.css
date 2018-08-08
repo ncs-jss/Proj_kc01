@@ -23,6 +23,7 @@
 }
 .mdc-list-item{
 	height: 10vh!important;
+	min-height: 64px;
 	justify-content: center!important;
 	align-items: center!important;
 	border-right: 0px solid #3047FF;
