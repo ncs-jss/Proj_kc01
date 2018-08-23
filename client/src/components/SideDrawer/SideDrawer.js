@@ -21,7 +21,7 @@ const SideDrawer = () => (
       <NavLink to="/nearby" exact>
         <ListItem>
           <ListItemText>
-            <Icon strategy="ligature" use="near_me_outline" />
+            <Icon strategy="ligature" use="near_me" />
           </ListItemText>
         </ListItem>
       </NavLink>
