@@ -2,25 +2,17 @@
 	width: 100vw;
 	z-index: 0;
 }
+
 .nearby-content{
 	padding:15vh 7.5vw 15px 13.75vw;
 }
-@media only screen and (orientation:portrait) {
-    .nearby-content{
-    	padding:15vh 0vw;
-    }
-}
-@media only screen and (max-width: 1199px){
-	#myContent{
-	column-count: 2!important;
-	column-gap: 0!important;
-	width: auto!important;
-	}
-}
-@media only screen and (max-width: 759px){
-	#myContent{
-	column-count: 1!important;
-	column-gap: 0!important;
-	width: auto!important;
-	}
+@media screen and (orientation: portrait) {
+  .nearby-content {
+    padding: 13vh 0 6vh 0;
+  }
+  .card{
+  	right: 0;
+  	margin:auto!important;
+  	margin-bottom: 24px!important;
+  }
 }
