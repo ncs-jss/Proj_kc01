@@ -8,6 +8,7 @@ Clone the repository and get into the directory
 
 ```
 git clone https://github.com/ncs-jss/Proj_kc01.git
+
 cd Proj_kc01
 ```
 
@@ -22,6 +23,7 @@ After cloning the repository run the following commands to install and run on lo
 
 ```
 yarn install
+
 yarn start
 ```
 
@@ -34,7 +36,3 @@ To test, run the following commands in the terminal
 ```
 yarn test
 ```
-
-
-
-
