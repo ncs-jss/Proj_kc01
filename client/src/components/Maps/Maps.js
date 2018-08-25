@@ -48,7 +48,7 @@ class Maps extends React.Component {
         <ReactSVGPanZoom
           className="svgPanZoom"
           detectAutoPan={false}
-          width={1644}
+          width={2560}
           height={480}
           tool="auto"
           background="#f5f5f5"
