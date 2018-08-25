@@ -24,7 +24,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "**/*{js,jsx,json,md}": [
+    "**/*{js,jsx,md}": [
       "eslint src --fix",
       "git add"
     ]
