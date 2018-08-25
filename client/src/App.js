@@ -26,15 +26,16 @@ class App extends React.Component {
   componentDidMount() {
     fetch(`${URL}/mapdata`)
       .then(res => res.json())
-      .then(mapdata => this.setState({ mapdata, loading: true }));
+      .then(mapdata => this.setState({ mapdata }));
     fetch(`${URL}/nearby`)
       .then(res => res.json())
-      .then(nearby => this.setState({ nearby, loading: true }));
+      .then(nearby => this.setState({ nearby }));
     fetch(`${URL}/society`)
       .then(res => res.json())
-      .then(society =>
-        this.setState({ societies: society.society, loading: false })
-      );
+      .then(society => this.setState({ societies: society.society }));
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 3000);
   }
 
   render() {
