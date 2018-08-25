@@ -35,7 +35,7 @@ class App extends React.Component {
       .then(society => this.setState({ societies: society.society }));
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 3000);
+    }, 5000);
   }
 
   render() {
