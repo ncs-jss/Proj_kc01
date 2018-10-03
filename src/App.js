@@ -10,7 +10,7 @@ import Societies from "./pages/Societies/Societies";
 import Error from "./pages/Error/Error";
 import "./App.css";
 
-const URL = "http://protected-badlands-80239.herokuapp.com";
+const URL = process.env.REACT_APP_URL;
 
 class App extends React.Component {
   constructor() {
@@ -24,6 +24,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log(URL);
     fetch(`${URL}/mapdata`)
       .then(res => res.json())
       .then(mapdata => this.setState({ mapdata }));
