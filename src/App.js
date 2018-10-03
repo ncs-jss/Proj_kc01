@@ -44,7 +44,7 @@ class App extends React.Component {
       content = <Loader />;
     } else
       content = (
-        <BrowserRouter>
+        <BrowserRouter basename="/kyc">
           <React.Fragment>
             <ToolBar />
             <Tabs />
