@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var yargs = require('yargs');
@@ -22,6 +23,20 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Headers','Origin, X-Requested-With,content-type, Accept');
     next();
 });
+
+// --------------------------------------------------------------
+
+var uristring = process.env.MONGODB_URI;
+
+mongoose.connect(uristring, { useMongoClient: true }, function(err, res) {
+    if (err) {
+        console.log('ERROR connecting to: remote' + uristring + '. ' + err);
+    } else {
+        console.log('Successfully connected to: remote' + uristring);
+    }
+});
+
+// --------------------------------------------------------------
 
 const port = process.env.PORT
 
