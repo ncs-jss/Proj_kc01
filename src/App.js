@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import dotenv from "dotenv";
 import Loader from "./components/Loader/Loader";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import ToolBar from "./components/ToolBar/ToolBar";
@@ -10,7 +11,8 @@ import Societies from "./pages/Societies/Societies";
 import Error from "./pages/Error/Error";
 import "./App.css";
 
-const URL = process.env.REACT_APP_URL;
+dotenv.config();
+const URL = process.env.REACT_APP_API_URL;
 
 class App extends React.Component {
   constructor() {
