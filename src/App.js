@@ -12,7 +12,7 @@ import Error from "./pages/Error/Error";
 import "./App.css";
 
 dotenv.config();
-const URL = process.env.REACT_APP_API_URL;
+const URL = "https://protected-badlands-80239.herokuapp.com";
 
 class App extends React.Component {
   constructor() {
@@ -26,7 +26,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(URL);
     fetch(`${URL}/mapdata`)
       .then(res => res.json())
       .then(mapdata => this.setState({ mapdata }));

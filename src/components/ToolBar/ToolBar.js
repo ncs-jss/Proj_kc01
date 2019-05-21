@@ -1,5 +1,5 @@
 import React from "react";
-import { Toolbar, ToolbarRow, ToolbarTitle } from "rmwc/Toolbar";
+import { Toolbar, ToolbarRow, ToolbarTitle } from "@rmwc/toolbar";
 import "./ToolBar.css";
 
 const ToolBar = () => (

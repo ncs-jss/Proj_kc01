@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "rmwc/Icon";
-import { Ripple } from "rmwc/Ripple";
+import { Icon } from "@rmwc/icon";
+import { Ripple } from "@rmwc/ripple";
 import "./Card.css";
 
 const Card = props => {

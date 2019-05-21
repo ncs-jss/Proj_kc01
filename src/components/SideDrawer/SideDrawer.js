@@ -1,7 +1,9 @@
 import React from "react";
-import { Drawer, DrawerContent, DrawerHeader } from "rmwc/Drawer";
-import { ListItem, ListItemText } from "rmwc/List";
-import { Icon } from "rmwc/Icon";
+import { Drawer, DrawerContent, DrawerHeader } from "@rmwc/drawer";
+import "@material/drawer/dist/mdc.drawer.min.css";
+import { ListItem, ListItemText } from "@rmwc/list";
+import "@material/list/dist/mdc.list.min.css";
+import { Icon } from "@rmwc/icon";
 import { NavLink } from "react-router-dom";
 import "./SideDrawer.css";
 

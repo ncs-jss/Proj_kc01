@@ -12,6 +12,9 @@
 	min-height: 64px;
 	color: #B8C2CC;
 	border-bottom: 1px solid #e4e4e4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .mdc-drawer__header-content{
 	width: 100%;
@@ -24,10 +27,12 @@
 .mdc-list-item{
 	height: 10vh!important;
 	min-height: 64px;
+	display: flex!important;
 	justify-content: center!important;
 	align-items: center!important;
 	border-right: 0px solid #3047FF;
 	transition: all 0.1s;
+	margin: 0!important;
 }
 .active>.mdc-list-item{
 	border-right:4px solid #3047FF;
@@ -41,6 +46,7 @@
 	width: 24px;
 	color:#B8C2CC;
 	transition: all 0.1s;
+	align-self: center!important;
 }
 .active .mdc-list-item__text{
 	color:#3047FF;

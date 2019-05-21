@@ -1,16 +1,10 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
-import { Ripple } from "rmwc/Ripple";
-import { Icon } from "rmwc/Icon";
+import { Ripple } from "@rmwc/ripple";
+import { Icon } from "@rmwc/icon";
 import { ReactSVGPanZoom } from "react-svg-pan-zoom";
-import {
-  Dialog,
-  DialogSurface,
-  DialogHeader,
-  DialogHeaderTitle,
-  DialogBody,
-  DialogBackdrop
-} from "rmwc/Dialog";
+import { Dialog, DialogTitle, DialogContent } from "@rmwc/dialog";
+import "@material/dialog/dist/mdc.dialog.min.css";
 import DialogField from "../DialogField/DialogField";
 import "./Maps.css";
 
@@ -532,31 +526,28 @@ class Maps extends React.Component {
           open={this.state.dialogOpen}
           onClose={() => this.setState({ dialogOpen: false })}
         >
-          <DialogSurface>
-            <DialogHeader>
-              <DialogHeaderTitle>{this.state.title}</DialogHeaderTitle>
-              <Ripple unbounded>
-                <span
-                  role="presentation"
-                  onClick={() => this.setState({ dialogOpen: false })}
-                  onKeyPress={() => this.setState({ dialogOpen: false })}
-                  className="close"
-                >
-                  <Icon strategy="ligature" use="close" />
-                </span>
-              </Ripple>
-            </DialogHeader>
-            <DialogBody>
-              {this.state.desc.map(field => (
-                <DialogField
-                  title={field[0]}
-                  superscript={field[1]}
-                  desc={field[2].join(" \u2022 ")}
-                />
-              ))}
-            </DialogBody>
-          </DialogSurface>
-          <DialogBackdrop />
+          <DialogTitle>
+            <DialogTitle>{this.state.title}</DialogTitle>
+            <Ripple unbounded>
+              <span
+                role="presentation"
+                onClick={() => this.setState({ dialogOpen: false })}
+                onKeyPress={() => this.setState({ dialogOpen: false })}
+                className="close"
+              >
+                <Icon strategy="ligature" use="close" />
+              </span>
+            </Ripple>
+          </DialogTitle>
+          <DialogContent>
+            {this.state.desc.map(field => (
+              <DialogField
+                title={field[0]}
+                superscript={field[1]}
+                desc={field[2].join(" \u2022 ")}
+              />
+            ))}
+          </DialogContent>
         </Dialog>
       </div>
     );
