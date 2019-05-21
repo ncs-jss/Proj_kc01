@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/dialog": "^2.2.0",
+    "@material/drawer": "^2.1.1",
+    "@material/list": "^2.1.1",
+    "@material/tab": "^2.2.0",
     "@rmwc/dialog": "^5.5.1",
     "@rmwc/drawer": "^5.5.1",
     "@rmwc/icon": "^5.5.1",
