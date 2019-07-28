@@ -26,7 +26,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(URL);
     fetch(`${URL}/mapdata`)
       .then(res => res.json())
       .then(mapdata => this.setState({ mapdata }));
