@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var yargs = require('yargs');
@@ -26,15 +26,15 @@ app.use(function (req, res, next) {
 
 // --------------------------------------------------------------
 
-var uristring = process.env.MONGODB_URI;
+// var uristring = process.env.MONGODB_URI;
 
-mongoose.connect(uristring, { useMongoClient: true }, function(err, res) {
-    if (err) {
-        console.log('ERROR connecting to: remote' + uristring + '. ' + err);
-    } else {
-        console.log('Successfully connected to: remote' + uristring);
-    }
-});
+// mongoose.connect(uristring, { useMongoClient: true }, function(err, res) {
+//     if (err) {
+//         console.log('ERROR connecting to: remote' + uristring + '. ' + err);
+//     } else {
+//         console.log('Successfully connected to: remote' + uristring);
+//     }
+// });
 
 // --------------------------------------------------------------
 
@@ -45,6 +45,9 @@ const port = process.env.PORT
 app.use(bodyParser.json());
 // ---------------------------------------------------------------
 
+app.get('/',(req,res)=>{
+  res.send("WELCOME");
+});
 app.post('/nearby', authenticate, (req, res) => {
   var nearby = new Nearby({
     name: req.body.name,
@@ -103,7 +106,7 @@ app.get('/nearby', (req,res) => {
 // ---------------------------------------------------------------
 
 app.get('/mapdata', (req,res) => {
-  MapData.find().then((mapdata) =>{
+  MapData.find().sort('index').then((mapdata) =>{
     var items = [];
     mapdata.forEach(function(item){
       items.push(item);

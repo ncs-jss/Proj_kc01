@@ -44,12 +44,25 @@
   display: none!important;
 }
 .mdc-dialog__surface{
-  max-width: 640px!important;
+  max-width: 64vw!important;
+  min-width: 32vw!important;
   border-radius: 4px!important;
   padding: 36px 48px 42px 48px;
+  overflow-y: scroll;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
   }
 .mdc-dialog__header{
-  padding: 0!important;
+  padding: 1.5rem 2rem!important;
+  width: 92%;
+  margin: auto;
+  margin-bottom: 3rem;
+  max-width: 90vw!important;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .mdc-dialog__header__title{
   font-size: 24px!important;
@@ -57,14 +70,15 @@
   line-height: 34px!important;
 }
 .mdc-dialog__body{
-  margin-top: 36px!important;
+  margin-top: 3rem!important;
   padding: 0!important;
 }
 .dialogField{
   display: flex;
   align-items: center;
   font-family: GT-Walsheim-Medium,sans-serif;
-  height: 84px;
+  min-height: 5rem;
+  margin-bottom: 1rem;
 }
 .dialogFieldTitle{
   height: 84px;
@@ -149,6 +163,7 @@
       left: -700px!important;
     }
     .mdc-dialog__surface{
-      transform: scale(0.9)!important;
+      min-width: 80vw!important;
+      transform: scale(0.8)!important;
     }
 }

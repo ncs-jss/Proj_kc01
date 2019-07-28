@@ -1,18 +1,24 @@
 .nearby{
 	width: 100vw;
 	z-index: 0;
+  overflow-y: scroll;
 }
 
 .nearby-content{
-	padding:15vh 7.5vw 15px 13.75vw;
+	padding:15vh 7.5vw 15px 10vw;
 }
+
 @media screen and (orientation: portrait) {
   .nearby-content {
     padding: 13vh 0 6vh 0;
   }
+  .nearby-content>div {
+    display: flex;
+    flex-direction: column;
+  }
   .card{
   	right: 0;
   	margin:auto!important;
-  	margin-bottom: 24px!important;
+  	margin-bottom: 12px!important;
   }
 }
