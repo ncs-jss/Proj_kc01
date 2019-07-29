@@ -26,18 +26,42 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`${URL}/mapdata`)
+    this.getMapData();
+    this.getNearbyData();
+    this.getSocietyData();
+    this.loadApp().then(() => {
+      this.setState({ loading: false });
+    });
+  }
+
+  getMapData() {
+    console.log("map");
+    return fetch(`${URL}/mapdata`)
       .then(res => res.json())
       .then(mapdata => this.setState({ mapdata }));
-    fetch(`${URL}/nearby`)
-      .then(res => res.json())
-      .then(nearby => this.setState({ nearby }));
-    fetch(`${URL}/society`)
+  }
+
+  getSocietyData() {
+    console.log("society");
+    return fetch(`${URL}/society`)
       .then(res => res.json())
       .then(society => this.setState({ societies: society.society }));
-    setTimeout(() => {
-      this.setState({ loading: false });
-    }, 5000);
+  }
+
+  getNearbyData() {
+    console.log("nearby");
+    return fetch(`${URL}/nearby`)
+      .then(res => res.json())
+      .then(nearby => this.setState({ nearby }));
+  }
+
+  loadApp() {
+    console.log("called");
+    return Promise.all([
+      this.getMapData(),
+      this.getSocietyData(),
+      this.getNearbyData()
+    ]);
   }
 
   render() {
@@ -46,7 +70,7 @@ class App extends React.Component {
       content = <Loader />;
     } else
       content = (
-        <BrowserRouter basename="/kyc">
+        <BrowserRouter>
           <React.Fragment>
             <ToolBar />
             <Tabs />

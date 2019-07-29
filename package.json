@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-jest": "^24.7.1",
     "dotenv": "^8.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -15,7 +14,7 @@
     "react-scripts": "^3.0.0",
     "react-svg-pan-zoom": "^2.17.0",
     "react-tooltip": "^3.6.1",
-    "rmwc": "^1.7.4"
+    "rmwc": "^1.9.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,14 +31,13 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "7.9.1",
+    "eslint-plugin-react": "7.14.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.7"

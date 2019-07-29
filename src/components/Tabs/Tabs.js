@@ -1,27 +1,18 @@
 import React from "react";
-import { TabBar, Tab, TabIcon, TabIconText } from "rmwc/Tabs";
+import { TabBar, Tab } from "rmwc/Tabs";
 import { NavLink } from "react-router-dom";
 import "./Tabs.css";
 
 const Tabs = () => (
   <TabBar>
-    <NavLink to="/">
-      <Tab>
-        <TabIcon>explore</TabIcon>
-        <TabIconText>Explore</TabIconText>
-      </Tab>
+    <NavLink to="/" exact>
+      <Tab stacked restrictIndicator icon="explore" label="Explore" />
     </NavLink>
-    <NavLink to="/nearby">
-      <Tab>
-        <TabIcon>near_me</TabIcon>
-        <TabIconText>NearBy</TabIconText>
-      </Tab>
+    <NavLink to="/nearby" exact>
+      <Tab stacked restrictIndicator icon="near_me" label="NearBy" />
     </NavLink>
-    <NavLink to="/societies">
-      <Tab>
-        <TabIcon>people</TabIcon>
-        <TabIconText>Societies</TabIconText>
-      </Tab>
+    <NavLink to="/societies" exact>
+      <Tab stacked restrictIndicator icon="people" label="Societies" />
     </NavLink>
   </TabBar>
 );
