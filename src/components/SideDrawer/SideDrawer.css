@@ -39,8 +39,17 @@
 	margin: 0!important;
 }
 
+.mdc-drawer__content a {
+	text-decoration: none;
+}
+
+.mdc-drawer .mdc-list-item {
+	color: #B8C2CC!important;
+}
+
 .active>.mdc-list-item {
 	border-right: 4px solid #3047FF;
+	color: #3047FF!important;
 }
 
 .mdc-list-item:hover {
@@ -48,16 +57,7 @@
 	cursor: pointer;
 }
 
-.mdc-drawer__content a {
-	text-decoration: none;
-	color: #B8C2CC;
-}
-
-.mdc-drawer__content .active {
-	color: #3047FF;
-}
-
-@media only screen and (orientation:portrait) {
+@media only screen and (orientation:portrait) and(max-width:768px) {
 	.mdc-drawer {
 		display: none!important;
 	}
