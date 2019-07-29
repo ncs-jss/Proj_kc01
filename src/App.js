@@ -35,28 +35,24 @@ class App extends React.Component {
   }
 
   getMapData() {
-    console.log("map");
     return fetch(`${URL}/mapdata`)
       .then(res => res.json())
       .then(mapdata => this.setState({ mapdata }));
   }
 
   getSocietyData() {
-    console.log("society");
     return fetch(`${URL}/society`)
       .then(res => res.json())
       .then(society => this.setState({ societies: society.society }));
   }
 
   getNearbyData() {
-    console.log("nearby");
     return fetch(`${URL}/nearby`)
       .then(res => res.json())
       .then(nearby => this.setState({ nearby }));
   }
 
   loadApp() {
-    console.log("called");
     return Promise.all([
       this.getMapData(),
       this.getSocietyData(),
