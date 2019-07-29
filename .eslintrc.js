@@ -10,7 +10,7 @@ module.exports = {
         },
         sourceType: "module"
     },
-    parser:"babel-eslint",
+    parser: "babel-eslint",
     extends: ["airbnb", "plugin:prettier/recommended"],
     rules: {
         "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
@@ -21,9 +21,10 @@ module.exports = {
         ],
         "react/forbid-prop-types": [true, { forbid: ["object"] }],
         "react/destructuring-assignment": [true, "never"],
-        "react/jsx-one-expression-per-line":false,
-        "no-underscore-dangle":0,
-        "consistent-return": 0 
+        "react/jsx-one-expression-per-line": false,
+        "no-underscore-dangle": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "consistent-return": 0
     },
     globals: {
         it: false
